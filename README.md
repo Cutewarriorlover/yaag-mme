@@ -1,4 +1,4 @@
-#
+# Yet Another Adventure Game - Murder Mystery Edition
 
 [![PyPI Version](https://img.shields.io/pypi/v/yaag-mme?style=flat)](https://pypi.org/project/yaag-mme/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/yaag-mme)](https://pypi.org/project/yaag-mme/)
