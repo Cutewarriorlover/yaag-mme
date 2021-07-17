@@ -7,14 +7,15 @@ Welcome to YAAG - MME's documentation!
 ======================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 4
+   :caption: Guides
+
+   guides/yaag_file_guide
 
 
 
-Indices and tables
+Index
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`
