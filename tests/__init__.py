@@ -1,1 +1,1 @@
-"""Unit test package for yaag_mme."""
+"""Unit test package for doc_switch."""
