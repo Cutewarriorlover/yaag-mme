@@ -83,4 +83,79 @@ A command can have something called a ``special parameter``, which is basically
 that. A special parameter. Each command can have at most one, and sometimes
 those are optional. They go after the command, and in the previous example, the
 ``advance`` would be the special parameter (for what it does, refer to the
-documentation on the ``[dialogue]`` command.)
+documentation on the ``[dialogue]`` command).
+
+Command Parameters
+^^^^^^^^^^^^^^^^^^
+
+A command can have a list of parameters that act as extra information to said
+command. Commands can have parameters that have an unlimited number of values
+(for an example, check out the ``[dialogue]`` command). If written correctly,
+a parameter can be parsed as a number, but they are usually strings.
+
+
+Commands
+********
+
+This is a list of commands that are currently in YAAG files.
+
+``[dialogue]``
+--------------
+
+This is usually the most common command. It just prints out a list of strings.
+
+Parameters
+^^^^^^^^^^
+
+.. glossary::
+    ``args*`` - String
+        A list of messages to print out.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``advance`` - Boolean
+        The ``advance`` special parameter is a boolean, indicating whether to use the ``input()`` function after each print.
+
+
+``[decision]``
+--------------
+
+A decision is a question presented to the user, with a list of possible choices.
+The user is them prompted to answer the question using numbers, representing the choices.
+
+Parameters
+^^^^^^^^^^
+
+.. glossary::
+    ``args*`` - String
+        A list of possible choices to present to the user
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``question`` - String
+        The question to present to the user
+
+``[quiz]``
+----------
+
+A question is presented to the user, who then is prompted to answer freely. If
+the user's answer is one of the possible answers, then give the user predefined
+stat boosts.
+
+Parameters
+^^^^^^^^^^
+
+.. glossary::
+    ``answer`` - String
+        The answer to the question
+
+        .. Note::
+            This answer is case-insensitive. If the answer is ``abc`` and the
+            user answers ``aBc``, it still counts.
+
+    ``stat_boost`` - String
+        The stat boost to give to the player if the answer is correct, represented in a Python runnable string
