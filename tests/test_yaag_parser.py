@@ -40,4 +40,4 @@ class TestYaagParser:
         """.strip()
 
     def test_tokenize(self):
-        Lexer.tokenize(self.yaag_file)
+        print(Lexer.tokenize(self.yaag_file))

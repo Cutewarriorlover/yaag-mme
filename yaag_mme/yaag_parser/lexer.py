@@ -5,9 +5,10 @@ from yaag_mme.yaag_parser.token_type import TokenType
 
 
 class Lexer:
-    _patterns = {
-        "command": r"\[[a-zA-Z]+\s?(?<=\s).*\]"
-    }
+    _patterns = [
+        (r"^\[[a-zA-Z]+\s?(?<=\s).*\]$", TokenType.COMMAND),
+        (r"(    )+(.+)", TokenType.PARAMETER)
+    ]
 
     @staticmethod
     def tokenize(string: str):
@@ -16,5 +17,8 @@ class Lexer:
         split_string = string.split("\n")
 
         for line in split_string:
-            if re.match(Lexer._patterns["command"], line):
-                tokens.append(Token(TokenType.COMMAND, line))
+            for pattern, type_ in Lexer._patterns:
+                if re.search(pattern, line):
+                    tokens.append(Token(type_, line))
+
+        return tokens
