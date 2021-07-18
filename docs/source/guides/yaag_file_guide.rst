@@ -219,3 +219,42 @@ Parameters
 
 .. Attention::
     There are no parameters for the ``[fight]`` command.
+
+
+``[if]``
+--------
+
+The if command acts as a control flow command. It currently supports one expression in the style of a Python ``if`` statement.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``condition`` - String
+        The condition to check
+
+Parameters
+^^^^^^^^^^
+
+.. glossary::
+    ``args*`` - String
+        What to do if the condition returns false
+
+
+``[chest]``
+-----------
+
+The chest command is similar to the ``[fight]`` command. It makes a chest that has loot tables defined in ``chests.json``
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``chest_name`` - String
+        The name of the loot table
+
+Parameters
+^^^^^^^^^^
+
+.. Attention::
+    There are no parameters for the ``[chest]`` command.
