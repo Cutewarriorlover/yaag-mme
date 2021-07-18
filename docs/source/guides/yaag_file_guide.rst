@@ -178,3 +178,44 @@ Parameters
 
 .. Attention::
     There are no parameters for the ``[run]`` command.
+
+
+``[room]``
+----------
+
+The room command is partly self-explanatory: it changes the current player's
+room. This command should be at the start of every file, so when you run a
+file, the room changes.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``room_name`` - String
+        The name of the room to change to.
+
+Parameters
+^^^^^^^^^^
+
+.. Attention::
+    There are no parameters for the ``[room]`` command.
+
+
+``[fight]``
+-----------
+
+The fight command initiates a fight between the player and another mob. Said
+mob's stats should be documented in another file ``mobs.json``.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``mob_name``
+        The name of the mob, which maps to a list of stats inside the aforementioned ``mobs.json`` file.
+
+Parameters
+^^^^^^^^^^
+
+.. Attention::
+    There are no parameters for the ``[fight]`` command.
