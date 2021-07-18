@@ -159,3 +159,22 @@ Parameters
 
     ``stat_boost`` - String
         The stat boost to give to the player if the answer is correct, represented in a Python runnable string
+
+
+``[run]``
+---------
+
+The run command is self-explanatory: it runs a ``.yaag`` file!
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``file`` - String
+        The ``.yaag`` file to run.
+
+Parameters
+^^^^^^^^^^
+
+.. Attention::
+    There are no parameters for the ``[run]`` command.
