@@ -7,7 +7,7 @@ from yaag_mme.yaag_parser.token_type import TokenType
 class Lexer:
     _patterns = [
         (r"^\[[a-zA-Z]+\s?(?<=\s).*\]$", TokenType.COMMAND),
-        (r"(    )+(.+)", TokenType.PARAMETER)
+        (r"(    )+.+", TokenType.PARAMETER)
     ]
 
     @staticmethod

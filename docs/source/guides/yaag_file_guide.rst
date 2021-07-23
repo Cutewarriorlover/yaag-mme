@@ -1,5 +1,5 @@
 ================
-YAAG Files Guide
+YAAG File Guide
 ================
 
 .. toctree::
@@ -80,7 +80,7 @@ Command Special Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A command can have something called a ``special parameter``, which is basically
-that. A special parameter. Each command can have at most one, and sometimes
+that. A special parameter. Each command can have at most two, and sometimes
 those are optional. They go after the command, and in the previous example, the
 ``advance`` would be the special parameter (for what it does, refer to the
 documentation on the ``[dialogue]`` command).
@@ -92,6 +92,15 @@ A command can have a list of parameters that act as extra information to said
 command. Commands can have parameters that have an unlimited number of values
 (for an example, check out the ``[dialogue]`` command). If written correctly,
 a parameter can be parsed as a number, but they are usually strings.
+
+
+Variables
+*********
+
+Variables are states that can be set so future places can refer to these and
+make decisions. The names can be anything, but convention states that they
+should be named like a Python variable (``lower_snake_case``). These can be set
+with the ``[var]`` command, and used in the ``[if]`` command.
 
 
 Commands
@@ -237,7 +246,7 @@ Parameters
 ^^^^^^^^^^
 
 .. glossary::
-    ``args*`` - String
+    ``args*`` - Command
         What to do if the condition returns false
 
 
@@ -258,3 +267,138 @@ Parameters
 
 .. Attention::
     There are no parameters for the ``[chest]`` command.
+
+
+``[rng]``
+---------
+
+The random number generator command, which is shortened to just rng, does one of two things randomly.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``chance`` - Integer
+        A number representing the chances of the outcome being ``True``.
+
+Parameters
+^^^^^^^^^^
+
+.. glossary::
+    ``true`` - Command
+        What to do if the result is ``True``.
+
+    ``false`` - Command
+        What to do if the result is ``False``.
+
+``[state]``
+-----------
+
+The state command changes a party member's state.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``party_member`` - String
+        The party member to change the state of. Can be one of:
+        .. glossary::
+            murdle
+                MurdleMuffin
+            tear
+                Tear 2bad
+            dino
+                Dino-Pack
+            eevee
+                Eevee005
+
+    ``state`` - String
+        The state to change to. Can be one of:
+        .. glossary::
+            alive
+                The member is alive and well. Although, you shouldn't revive anyone. Just saying...
+            spared
+                The player has spared the party member (not killing them).
+            killed
+                The player chose to kill the party member.
+
+Parameters
+^^^^^^^^^^
+
+.. Attention::
+    There are no parameters for the ``[state]`` command.
+
+``[trust]``
+-----------
+
+The trust command initiates a trust check. The algorithm for whether the player passes is below:
+
+.. image:: ../assets/trust_check.svg
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``charisma`` - Integer
+        The minimum Charisma needed to pass the trust check
+
+Parameters
+^^^^^^^^^^
+
+.. glossary::
+    ``pass`` - Command
+        What to do if the trust check passes
+    ``fail`` - Command
+        What to do if the trust check fails
+
+``[stat]``
+----------
+
+The stat command increases a player's stat by a number.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``stat`` - String
+        The stat to increase
+    ``amount`` - Integer
+        The amount to increase by. If negative, subtracts.
+
+Parameters
+^^^^^^^^^^
+
+.. attention::
+    There are no parameters for the ``[stat]`` command.
+
+``[var]``
+---------
+
+The variable command, shortened to var, updates a variable.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. glossary::
+    ``var_name`` - String
+        The variable to set. If the variable doesn't exist, creates one.
+    ``value`` - Any
+        The value to set the variable to. This can by of any type.
+
+``[drop]``
+----------
+
+The drop command gives the player an item randomly chosen from the parameters.
+
+Special Parameters
+^^^^^^^^^^^^^^^^^^
+
+.. attention::
+    There are no special parameters for the ``[drop]`` command.
+
+Parameters
+^^^^^^^^^^
+
+.. glossary::
+    ``args*`` - String
+        A list of possible drops, which map to something from the ``drops.json`` file.
