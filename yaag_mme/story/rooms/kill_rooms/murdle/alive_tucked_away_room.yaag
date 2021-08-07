@@ -1,0 +1,48 @@
+[room tucked_away_room]
+[dialogue advance]
+    You walk into the room to your right.{{\n\n}}MurdleMuffin is sitting in the corner, like he was before the dungeon run.
+
+    ---Chat---{{\n\n}}MurdleMuffin: oh
+
+    MurdleMuffin: hi
+
+    {{player_name}}: what are you doing?
+
+    MurdleMuffin: sitting in a corner
+
+    {{player_name}}: i can see that
+
+    {{player_name}}: but why
+
+    {{player_name}}: shouldnt you be helping?
+
+    MurdleMuffin: i didnt really want to do this
+
+    MurdleMuffin: i just wanted the money
+
+    {{player_name}}: oh i see
+
+    {{player_name}}: well have fun i guess
+
+    MurdleMuffin: thanks
+
+    MurdleMuffin: wait
+
+    {{player_name}}: ?
+
+    MurdleMuffin: tahe this
+
+    MurdleMuffin: *take
+
+    MurdleMuffin: i wont need it
+
+    {{player_name}}: oh, thx{{\n\n}}---Chat has ended---
+
+[item HP Restore]
+
+[dialogue]
+    ----Spare or Kill?---{{\n\n}}In this game, you have the choice to either be a murderer, or run the dungeon as normal. Most of the time, you only get one chance to kill your party members, so choose wisely.
+
+[decision "Do you want to kill MurdleMuffin?]
+    Yes [run kill_murdle.yaag]
+    No [run spare_murdle.yaag]

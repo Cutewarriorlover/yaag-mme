@@ -1,0 +1,15 @@
+[room monster_chest_room]
+[dialogue]
+    You walk into the room, having just come out of the hallway.
+
+[fight Deadly Flower]
+
+[dialogue]
+    You notice a chest in the back of the room.
+
+[chest normal_chest]
+
+[dialogue]
+    With nothing left in the room, you decide to retreat into the hallway from before.
+
+[run in-between_room.yaag]

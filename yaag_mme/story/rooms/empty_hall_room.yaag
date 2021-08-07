@@ -1,0 +1,9 @@
+[room empty_hall_room]
+[dialogue advance]
+    You walk into the hallway.
+
+    It's large and empty, so you continue.
+
+[decision "Where do you go?"]
+    Left [run t_room.yaag]
+    Right [run monster_room.yaag]

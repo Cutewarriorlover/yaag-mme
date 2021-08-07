@@ -1,0 +1,42 @@
+[room boss_room]
+[dialogue advance]
+    You draw your sword and slowly approach Eevee005, who has her back turned. You swipe at the back of her kneecaps, sweeping her off her feet. She immediately scrambles to get up, turning to face you in the process. She draws her own blade.
+
+    ---Chat---{{\n\n}}Eevee005: I should have known. You're a murderer.
+
+    Eevee005: No matter. I took down Mr. Dye, I can take you out too.
+
+    {{player_name}}: why u talking so fancily
+
+    Eevee005: Because this isn't a game anymore, {{player_name}}.
+
+    {{player_name}}: lol wydm
+
+    {{player_name}}: of course its still a game
+
+    {{player_name}}: thats what this yaag thing is
+
+    Eevee005: Of course you'd say that. This ends now.
+
+[fight Eevee005]
+
+[dialogue advance]
+    Eevee005: I should have seen this coming too...
+
+    {{player_name}}: this? what's this?
+
+    Eevee005: You wanted to murder me. Of course you wouldnt die so easily.
+
+    {{player_name}}: i-
+
+    Eevee005: No. Shush.
+
+    Eevee005: Let me die in peace.
+
+    {{player_name}}: ...
+
+[stat Charisma 5]
+
+[state eevee dead]
+
+[run boss_room2.yaag]

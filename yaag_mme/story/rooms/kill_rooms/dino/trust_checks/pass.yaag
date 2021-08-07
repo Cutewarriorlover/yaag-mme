@@ -1,0 +1,28 @@
+[room lounge_room]
+[dialogue advance]
+    {{player_name}}: yeah
+
+    {{player_name}}: tear went left
+    
+    {{player_name}}: and murdle's down the hall
+
+    Dino-Pack: cool, cool
+
+    Dino-Pack: ill go pay them a vist, see if they need anything
+
+    Dino-Pack: oh yeah,
+
+    Dino-Pack: take this
+
+[item HP Restore]
+
+[item Lead Blade]
+
+[dialogue advance]
+    {{player_name}}: sweet
+
+    {{player_name}}: ty
+
+    Dino-Pack: np{{\n\n}}---Chat has ended---
+
+[run post_check.yaag]

@@ -1,0 +1,9 @@
+[room slime_sword_room]
+[if tear == dead]
+    [run dead_slime_sword_room.yaag]
+
+[if tear == spared]
+    [run spared_slime_sword_room.yaag]
+
+[if tear == alive]
+    [run alive_slime_sword_room.yaag]

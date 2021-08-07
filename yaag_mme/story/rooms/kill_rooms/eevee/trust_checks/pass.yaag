@@ -1,0 +1,33 @@
+[room boss_room]
+[dialogue advance]
+    ---Chat---{{\n\n}}{{player_name}}: yeah i saw em
+
+    Eevee005: really!?
+
+    Eevee005: where??
+
+    {{player_name}}: hmm, well...
+
+    {{player_name}}: tear immediately went left, murdle's in a corner close to the start, and i saw dino a few rooms ago
+
+    Eevee005: ah, i see
+
+    Eevee005: so... why aren't they here now?
+
+    {{player_name}}: good question
+
+    {{player_name}}: dino said he was gonna check on the others before coming here
+
+    {{player_name}}: dunno about the other two tho
+
+    Eevee005: hmm
+
+    Eevee005: should we wait here then?
+
+    {{player_name}}: sounds like a plan{{\n\n}}---Chat has ended---
+
+    ----Spare or Kill?---{{\n\n}}In this game, you have the choice to either be a murderer, or run the dungeon as normal. Most of the time, you only get one chance to kill your party members, so choose wisely.
+
+[decision "Do you want to kill Eevee005?]
+    Yes [run ../kill_eevee.yaag]
+    No [run ../spare_eevee.yaag]

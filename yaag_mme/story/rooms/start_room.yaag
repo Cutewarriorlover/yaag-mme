@@ -1,0 +1,9 @@
+[room start_room]
+[dialogue advance]
+    As you walk back into the starting room, you notice how quiet and empty the room is.
+
+    "This was probably just used so we could spawn..." you think, seeing as how there's nothing in here.{{\n\n}}Without anything to do, the best course of action is simply to leave the room.
+
+[decision "Where do you go?"]
+    Right [run t_room.yaag]
+    Left [run kill_rooms/tear/slime_sword_room.yaag]

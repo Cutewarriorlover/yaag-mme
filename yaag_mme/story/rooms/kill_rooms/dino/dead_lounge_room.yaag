@@ -1,0 +1,11 @@
+[room lounge_room]
+[dialogue advance]
+    You find Dino-Pack's body on the floor, right where you met him.
+
+    His sword looks dull.
+
+    You should go find Eevee005.
+
+[decision "Where do you go?"]
+    North [run ../../monster_hall_room.yaag]
+    East [run ../../hidden_drop_room.yaag]

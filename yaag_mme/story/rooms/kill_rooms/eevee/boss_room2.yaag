@@ -1,0 +1,15 @@
+[room boss_room]
+
+[if eevee == "alive"]
+    [run pre-party_eevee_alive.yaag]
+
+[if eevee == "spared"]
+    [run pre-party_eevee_alive.yaag]
+
+[if eevee == "dead"]
+    [if dino == "dead"]
+        [if tear == "dead"]
+            [if murdle == "dead"]
+                [run solo_end.yaag]
+
+[run pre-party_eevee_dead.yaag]

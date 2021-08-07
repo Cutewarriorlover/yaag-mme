@@ -1,0 +1,14 @@
+[room random_drop_room]
+[rng 50]
+    [rng 50]
+        [drop] 
+            HP Restore
+        [drop]
+            Small HP Boost
+            Small Power Boost
+            Small Defense Boost
+            Small Luck Boost
+    [dialogue]
+        You found nothing...
+[var random_drop_done True]
+[run random_drop_room2.yaag]

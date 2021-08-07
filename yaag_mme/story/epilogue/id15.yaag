@@ -1,0 +1,33 @@
+[dialogue advance]
+    As you regain your vision, you see a crowd of people cheering for you. {{\n\n}}} Then, the crowd starts gasping and murmuring. They noticed you’re the only one left.
+
+    You hear a voice. The same voice from the beginning of the run. {{\n\n}} “Welcome, welcome! My name is PSugar400, and congratulations! You’ve defeated the first floor of the dungeon, and we’re all excited for you! ...Wait, you’re the only one?” said PSugar400.
+
+    “Uh, yeah. The rest of them were killed by enemies.” you lie without hesitation. {{\n\n}} “Oh, I see. Let us take a moment to remember them.” said PSugar400. “I have memorial letters written for them. I’ll read them.”
+
+    “Tear 2bad was one of the first to sign up for our multiplayer test. He was very excited to play in this game. He said he liked the fighting aspect of the test. He wanted to fight Mr. Dye as soon as possible. Let us take a moment of silence.” The crowd was silent for a minute.
+
+    “We don’t know much about MurdleMuffin’s intentions. They were quite shy, and wouldn’t reveal much. We believe it was to meet new people. Let us take a moment of silence.” The crowd was silent for a minute
+
+    “Dino-Pack was always interested in Arm Attack Inc.’s projects. He was interested in the original Dungeon run. Trying to talk to {{hero_name}}, trying to talk to us, and all that. The second we saw his request to join the test, we knew he had to be accepted. Let us take a moment of silence.” The crowd was silent for a minute.
+
+    “Eevee005 was a sweet person. She was legitimately interested in the project. She was keeping up with updates as soon as we posted an announcement that we were looking for people for a multiplayer test. Let us take a moment of silence.” The crowd was silent for a minute.
+
+    “Now, as the audience knows, we have a special guest! The Chosen Hero, {{hero_name}}, is here today with us!” the audience roars with cheers, and {{hero_name}} stands up, waving, and thanking the crowd. {{\n\n}} {{hero_name}} looks at you. You notice the suspicion in their eyes. It feels like a long stare, but ends shortly.
+
+    PSugar400 continues. “But back to our playtester, I think they deserve a name, what do you reckon?” The stands agrees loudly. “How about the Jack of All Trades?” Most of the audience stays silent, but some shout your new title.
+
+    “Jack of All Trades! Jack of All Trades! Jack of All Trades!”
+
+    Once the crowd calms down, PSugar400 keeps talking. ”Now, let’s hear a word from our newly named Jack of All Trades. {{player_name}}, what do you have to say?”
+
+[message “{{message}},” you say.]
+
+[dialogue advance]
+    “Thank you for your words, {{player_name}}.” {{\n\n}} “And that was the Multiplayer Test, turned Singleplayer, for our dungeon here at Arm Attack Inc.! Thank you for being here. Once again, I’ve been your host, PSugar400, and goodnight.” finished PSugar400, walking up to you. {{\n\n}} “Tomorrow you have a meeting with {{hero_name}}. We’ve given you a room in a nearby hotel. You’ll have a rep that you’ll work with. For now, follow the security team. They’ll lead you to your hotel room.” informed PSugar400.
+
+    You follow PSugar400’s lead along. Eventually, PSugar400 breaks off the path, and you instead follow a security team. They bring you past crowds, so you wave to them. Most of the crowd doesn’t wave back. {{\n\n}} After a good 10 minutes, you arrive at your hotel room. Room 105. It’s not a very large room, but bigger than general hotel rooms. You look at the time, it’s only 3:00 PM, but you feel very tired. The bed looks very soft and comfortable. You decide to lay down, and then close your eyes, falling into a comfortable sleep.
+
+    The end.
+
+    Your game ID is {{epilogueID}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.

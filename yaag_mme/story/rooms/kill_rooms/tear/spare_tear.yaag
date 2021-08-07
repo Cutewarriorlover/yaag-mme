@@ -1,0 +1,12 @@
+[room slime_sword_room]
+[dialogue advance]
+    You did not kill Tear 2bad. {{\n\n}}Walking away from Tear 2bad, you're unsure of where to go next.
+
+[stat Charisma 10]
+
+[state tear spared]
+
+[decision "Where do you want to go?"]
+    Right [run ../../in-between_room.yaag]
+    Left [run ../../corner_room.yaag]
+    Back [run ../../start_room.yaag]

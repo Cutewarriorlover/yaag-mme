@@ -1,0 +1,7 @@
+[room in-between_room]
+[dialogue advance]
+    The room is just a barren hallway. It's empty.
+
+[decision "Where do you want to go?"
+    Left [run kill_rooms/tear/slime_sword_room.yaag]
+    Right [run monster_chest_room.yaag]

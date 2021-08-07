@@ -1,0 +1,120 @@
+[room boss_room]
+[dialogue advance]
+    The footsteps get closer, and closer, and closer still... Until the door slowly creaks open.
+
+[if dino == "alive"]
+    [state dino spared]
+
+[if tear == "alive"]
+    [state tear spared]
+
+[if murdle == "alive"]
+    [state murdle spared]
+
+[if dino == "spared"]
+    [dialogue]
+        Dino-Pack pokes his head into the room. Seeing you, he walks in, sword drawn.
+
+[if tear == "spared"]
+    [dialogue]
+        Tear 2bad rushes into the room at top speed. When he spots you, and Eevee005's body, he draws his blade.
+
+[if murdle == "spared"]
+    [dialogue]
+        MurdleMuffin slowly shuffles into the room.
+
+[if dino == "dead"]
+    [if tear == "dead"]
+        [dialogue]
+            ---Chat---{{\n\n}}MurdleMuffin: why is eevee dead?
+    [if tear == "spared"]
+        [dialogue]
+            ---Chat---{{\n\n}}Tear 2bad: ey why eevee dead
+
+[if dino == "spared"]
+    [dialogue advance]
+        ---Chat---{{\n\n}}Dino-Pack: uh...
+        
+        Dino-Pack: why is eevee dead?
+
+        Dino-Pack: {{player_name}}... did you kill her!?
+
+[dialogue advance]
+    {{player_name}}: no guys i swear i didnt kill her
+    
+    {{player_name}}: mr dye did
+
+[if tear == "dead"]
+    [if murdle == "dead"]
+        [dialogue]
+            Dino-Pack so... where's mr. dye now?
+    [if murdle == "spared"]
+        [dialogue]
+            MurdleMuffin: and you killed mr dye?
+
+[if tear == "spared"]
+    [dialogue advance]
+        Tear 2bad: and mr dye is dead now?
+
+        Tear 2bad: damn
+
+        Tear 2bad: i wanted to kill him
+
+[dialogue advance]
+    {{player_name}}: yes mr dye is dead
+    
+    {{player_name}}: eevee weakened him a lot
+    
+    {{player_name}}: so i ended his life
+    
+    {{player_name}}: but it was too late
+
+[if murdle == "dead"]
+    [if dino == "dead"]
+        [dialogue]
+            Tear 2bad: sure lol
+    [if dino == "spared"]
+        [dialogue]
+            Dino-Pack: you could have tried harder
+
+[if murdle == "spared"]
+    [dialogue advance]
+        MurdleMuffin: awh man
+
+        MurdleMuffin: what will we tell Arm Attack?
+
+[dialogue advance]
+    {{player_name}}: look
+    
+    {{player_name}}: im sorry i couldnt save her
+    
+    {{player_name}}: but there's nothing we can do
+    
+    {{player_name}}: so lets just leave
+    
+    {{player_name}}: we wont forget her, right?
+
+[if dino == "spared"]
+    [dialogue]
+        Dino-Pack: no, no we wont
+
+[if tear == "spared"]
+    [dialogue]
+        Tear 2bad: i guess not
+
+[if murdle == "spared"]
+    [dialogue]
+        MurdleMuffin: we'll remember her
+
+[dialogue advance]
+    ---Chat has ended---
+
+    You scan the room alongside the rest of your party. Eventually, someone notices a button on the far wall. They press it.
+
+    A subtly hidden door opens, blinding white lights included. You lead your party through the doors.
+
+[if tear == "spared"]
+    [dialogue]
+        As you and Tear 2bad are about to enter, he stops you. He delivers a light punch on your shoulder. "thats for killing dye without me," pops up in chat. You roll your eyes, and push Tear 2bad through the doorway.
+
+[run ../../../epilogue/epilogue.yaag]

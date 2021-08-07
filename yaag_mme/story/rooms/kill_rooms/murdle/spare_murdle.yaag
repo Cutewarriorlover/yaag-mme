@@ -1,0 +1,12 @@
+[room tucked_away_room]
+[dialogue advance]
+    You did not kill MurdleMuffin.{{\n\n}}Walking away, you decide where you should go next.
+
+[stat Charisma 10]
+
+[state murdle spared]
+
+[dialogue advance]
+    You walk back into the room you were last in.
+
+[run ../../t_room.yaag]

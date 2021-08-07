@@ -1,0 +1,80 @@
+[room boss_room]
+[dialogue advance]
+    ---Chat---{{\n\n}}{{player_name}}: yeah, i saw 'em
+
+    Eevee005: where?
+
+    {{player_name}}: uh, well...
+
+    Eevee005: ??
+
+    Eevee005: spit it out!
+
+    {{player_name}}: i-
+
+    {{player_name}}: ...dont know
+
+    Eevee005: ...
+
+    Eevee005: you...
+
+    Eevee005: ...dont know?
+
+    {{player_name}}: thats what i said
+
+    {{player_name}}: and i meant it
+
+    Eevee005: they're dead...
+
+    Eevee005: ...aren't they?
+
+    {{player_name}}: ...
+
+    {{player_name}}: yes
+
+    {{player_name}}: im sorry
+
+    Eevee005: You killed them.
+
+    {{player_name}}: what??
+
+    Eevee005: They're all dead because of you.
+
+    Eevee005: Aren't I right?
+
+    Eevee005: {{player_name}}! You're here to kill me, too, right?
+
+    {{player_name}}: no no
+
+    {{player_name}}: im not
+
+    {{player_name}}: i swear
+
+    Eevee005: Yeah, right. {{player_name}}, I see right through you.
+
+    {{player_name}}: lol why u talking so fancy like
+
+    Eevee005: Because this isn't a game anymore. {{player_name}}, you're out for blood and I won't have it. This ends now.
+
+[fight Eevee005]
+
+[dialogue advance]
+    Eevee005: I should have known.
+
+    {{player_name}}: known? known what?
+
+    Eevee005: I was accusing you of murdering everyone. Of course you wouldnt die so easily.
+
+    {{player_name}}: i-
+
+    Eevee005: No. Shush.
+
+    Eevee005: Let me die in peace.
+
+    {{player_name}}: ...
+
+[state eevee dead]
+
+[stat Charisma 7]
+
+[run ../boss_room2.yaag]

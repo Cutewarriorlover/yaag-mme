@@ -1,0 +1,11 @@
+[room monster_hall_room]
+[dialogue advance]
+    "Why are there so many hallways?" you ask yourself.
+
+    You spot a skull on the ground.
+
+    Then you notice the rest of the dead skeleton.{{\n\n}}"Whew... Just a dead monster. I thought it was Eevee..." you say out loud, to nobody in paticular.
+
+[decision "Where do you want to go?]
+    North [run kill_rooms/eevee/boss_hall_room.yaag]
+    South [run kill_rooms/dino/lounge_room.yaag]

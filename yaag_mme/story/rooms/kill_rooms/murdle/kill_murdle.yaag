@@ -1,0 +1,44 @@
+[room tucked_away_room]
+[dialogue advance]
+    You turn around to face MurdleMuffin, drawing your sword.{{\n\n}}---Chat---
+
+    MurdleMuffin: what are you doing?
+
+    MurdleMuffin: is there a monster around?
+
+    {{player_name}}: no :)
+
+    MurdleMuffin: then why do you have your sword out?
+
+    {{player_name}}: say goodnight ;)
+
+    MurdleMuffin: what?{{\n\n}}---Chat has ended---
+
+[fight MurdleMuffin]
+
+[dialogue advance]
+    ---Chat---
+
+    MurdleMuffin: awh man
+
+    {{player_name}}: you forgot something
+
+    MurdleMuffin: what?
+
+    {{player_name}}: creeper
+
+    MurdleMuffin: ... -_-
+
+    {{player_name}}: any last words?
+
+    MurdleMuffin: this is why i didnt want to play this game...{{\n\n}}---Chat has ended---
+
+    You swing your sword at MurdleMuffin, landing the finishing blow.
+
+    You stand there, blood on your sword, and decide to leave the room.
+
+[stat Charisma 5]
+
+[state murdle dead]
+
+[run ../../t_room.yaag]

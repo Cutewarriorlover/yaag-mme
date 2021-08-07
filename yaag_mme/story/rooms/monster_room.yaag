@@ -1,0 +1,12 @@
+[room monster_room]
+[dialogue advance]
+    You walk into the room, nearing the corner of the hall.
+
+[fight Slime]
+
+[dialogue]
+    You look around the room. You don't see anything, so you keep going.
+
+[decision "Where do you want to go?"]
+    Left [run empty_hall_room.yaag]
+    Right [run hidden_drop_room.yaag]

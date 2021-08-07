@@ -1,0 +1,9 @@
+[room tucked_away_room]
+[dialogue advance]
+    You walk into the room where you've seen MurdleMuffin.
+
+    You see MurdleMuffin's dead, cold, body in the corner.{{\n\n}}You should leave.
+
+    You walk back the way you came.
+
+[run ../../t_room.yaag]

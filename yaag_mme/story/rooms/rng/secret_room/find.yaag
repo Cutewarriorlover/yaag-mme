@@ -1,0 +1,13 @@
+[room boss_hall_room]
+[dialogue advance]
+    ...
+    
+    Something feels wrong here.
+
+    I may just be the narrator, but I think you should look around some more.
+
+    You can do a check for hidden items.
+
+[decision "Would you like to check for anything hidden?"
+    Yes [run yes_search.yaag]
+    No [run no_search.yaag]

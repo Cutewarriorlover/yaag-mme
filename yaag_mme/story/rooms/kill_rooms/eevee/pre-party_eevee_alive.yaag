@@ -1,0 +1,35 @@
+[room boss_room]
+[dialogue advance]
+    So you wait with Eevee005.
+
+    And wait...
+
+    And wait some more...
+
+    ---Chat---{{\n\n}}Eevee005: ...
+
+    Eevee005: where are they??
+
+    Eevee005: im gonna go look for them :/
+
+[decision "Do you want to follow Eevee005?"]
+    Yes [var meta_follow_joke yes]
+    No [var meta_follow_joke no]
+
+[if meta_follow_joke == "yes"]
+    [dialogue]
+        You decide to fol-
+
+[if meta_follow_joke == "no"]
+    [dialogue]
+        You decide to wai-
+
+[dialogue advance]
+      Eevee005 rushes back into the room.
+
+[if dino == "dead"]
+    [if tear == "dead"]
+        [if murdle == "dead"]
+            [run lone_eevee.yaag]
+
+[run party_eevee_alive.yaag]

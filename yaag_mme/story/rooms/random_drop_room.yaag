@@ -1,0 +1,19 @@
+[room random_drop_room]
+[dialogue advance]
+    You walk into the hallway.
+
+    Something feels off.
+
+    You can do a check for any hidden items.
+
+[if random_drop_done == False]
+    [decision "Would you like to do a check for any hidden items?"]
+        Yes [run rng/random_drop/yes_drop.yaag]
+        No [run rng/random_drop/no_drop.yaag]
+
+[dialogue advance]
+    You should keep going.
+
+[decision "Where do you want to go?"]
+    Left [run monster_room.yaag]
+    Right [run kill_rooms/dino/lounge_room.yaag]

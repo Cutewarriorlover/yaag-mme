@@ -1,0 +1,10 @@
+[room boss_hall_room]
+[if room_secret == lost]
+    [dialogue]
+         You don't find anything, but I swear there has to be something...
+    [run lost.yaag]
+
+[if room_secret == found]
+    [dialogue]
+         You found a secret room! I knew there had to be something.
+    [run found.yaag]

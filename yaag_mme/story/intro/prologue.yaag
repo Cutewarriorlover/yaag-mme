@@ -1,9 +1,3 @@
-from yaag_mme.yaag_parser import parser
-
-
-class TestYaagParser:
-    def setup_method(self):
-        self.yaag_file = r"""
 [dialogue advance]
     It was a normal day. You wake up, ready to start the day. You roll over in your bed, and check your phone. It's Saturday. You scroll the news app that came pre-installed on your phone. There's the usual. New tech releases, video games are announced, the leader of some country does something stupid, that kind of news.
 
@@ -26,7 +20,3 @@ class TestYaagParser:
      "Wait, seriously!?" you exclaim. "That's awesome! When's the test?" you ask.{{\n\n}}"In one week. So, on the 12th," answered the CEO.
 
 [run start.yaag]
-        """.strip()
-
-    def test_parser(self):
-        print(parser.parse(self.yaag_file))

@@ -1,0 +1,30 @@
+[dialogue advance]
+
+    "How about the guy preparing ovcer there?" you suggest.{{\n\n}}"Good pick," replies Eevee005.
+
+    When you get near to the player, he speaks first.{{\n\n}}"Hi! My name's Tear2bad, and I'm super exited for this dungeon run! Aren't you three excited?" he rambles exitedly.{{\n\n}}"I guess I'm exited," you say.{{\n\n}}"We all are, to an extent," adds Dino-Pack.
+
+    "Niiice. It's nice to meet you guys. What're your names?" asks Tear 2bad.{{\n\n}}"Oh, my name's Dino-Pack, this is Eevee005, and this is {{player_name}}," replies Dino-Pack, pointing everyone out.
+
+    As much as Tear 2bad is hopping around, you still get a good look at him. He's quite tall, being taller than Dino-Pack, even if it's a small amount. He's wearing a standard, grey, long sleeved t-shirt and jeans. He has black hair and green coloured eyes.
+
+    "Cool, cool. Hey, hey, when do we start?" stats Tear 2bad.{{\n\n}}"Twelve twenty-five," replies Eevee005.{{\n\n}}You glance at a clock. 12:15. "Damn, still ten more minutes," you think, dissapointed.{{\n\n}}"Nice, nice. See you then," delcares Taer 2bad, walking away.
+
+    "That was... odd," says Dino-Pack.{{\n\n}}"Yeah, definately..." agrees Eevee005. In the distance, you could hear Tear 2bad call out.{{\n\n}}"I heard that!" he said. You, Dino-Pack, and Eevee005 look at each other.
+
+    "Best we dont question that. There's still one guy left," says Eevee005.{{\n\n}}"Yeah. Let's go pay him a visit," replies Dino-Pack.
+
+---Quiz Time---{{\n\n}}Occationally, there will be quizzes to partake in. They will always provide rewards.
+
+[quiz "What is the name of the last player?"]
+    MurdleMuffin
+    maximum_health += 1; heal()
+
+[dialogue advance]
+    You, Dino-Pack, and Eevee005 all walk up to the guy sitting down. Eevee005 speaks first.{{\n\n}}"Hi, I'm Eevee005, this is Dino-Pack, and this is {{player_name}}," she says, pointing you both out as she named you.
+
+    "Oh, uhh, hi?" says the guy, sounding confused. "My name's MurdleMuffin. When do we start this thing?" he continued.{{\n\n}}"At twelve twenty-five," replies Eevee005.{{\n\n}}"And it's nice to meet you, MurdleMuffin," added Dino-Pack.
+
+    You can't really tell what MurdleMuffin looks like. He's wearing a black hoodie, with the hood up. You can't see his hair, so you assume it's short, if it can't be seen with the hood. Because he's sitting down, you can't tell how tall he is.{{\n\n}}"What a mysterious guy..." you think.
+
+[run ../start2.yaag]

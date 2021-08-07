@@ -1,0 +1,12 @@
+[room boss_hall_room]
+[dialogue]
+    Another hallway, how predictable.
+
+[if secret_room == unfound]
+    [run rng/secret_room/find.yaag]
+
+[if secret_room == lost]
+    [run rng/secret_room/lost.yaag]
+
+[if secret_room == found]
+    [run rng/secret_room/found.yaag]

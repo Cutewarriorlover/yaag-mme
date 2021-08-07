@@ -1,0 +1,12 @@
+[room boss_hall_room]
+[dialogue advance]
+    There is a, not-so-hidden, hidden passage in the room.
+
+    "Onwards!" you think to yourself.
+
+    WARNING! Ahead of you is the last room in the game. If you wish to finish other things first, go back now. If you're ready to finish the game, move forward.
+
+[decision "Where do you want to go?"]
+    Boss Room [run ../../kill_rooms/eevee/boss_room1.yaag]
+    Back [run ../../monster_hall_room.yaag]
+    Secret Passage [../../secret_room.yaag]

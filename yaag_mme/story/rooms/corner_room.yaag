@@ -1,0 +1,9 @@
+[room corner_room]
+[dialogue advance]
+    You walk into the left-most room.
+
+    It's an empty room, only containing some enemy remains.{{\n\n}}"Tear's probably been in here," you think interally. "Looks like there's been a fight."
+
+    As there's nothing else in the room, you decide to exit the room.
+
+[run slime_sword_room.yaag]

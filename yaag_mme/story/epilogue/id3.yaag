@@ -1,0 +1,43 @@
+[dialogue advance]
+    As you regain your vision, you see a crowd of people cheering for you and the rest of your team. 
+
+    Then, the crowd starts gasping and murmuring. {{\n\n}} “They noticed Dino-Pack’s not here,” said Eevee005.
+
+    You hear a voice. The same voice from the beginning of the run. {{\n\n}} “Welcome, welcome! My name is PSugar400, and congratulations! You’ve defeated the first floor of the dungeon, and we’re all excited for you! Wait, there’s only four of you?” said PSugar400. {{\n\n}} “Uh, yeah. Dino-Pack was killed by enemies.” you lie.
+
+    “Oh, I see. Let us take a moment to remember them.” said PSugar400. “I have a memorial letter written for them. I’ll read it.”
+
+    “Dino-Pack was always interested in Arm Attack Inc.’s projects. He was interested in the original Dungeon run, trying to talk to {{hero_name}}, trying to talk to us, and all that. The second we saw his request to join the test, we knew he had to be accepted. Let us take a moment of silence.” The crowd was silent for a minute.
+
+    “Now, as the audience knows, we have a special guest! The Chosen Hero, {{hero_name}}, is here today with us!” the audience roars with cheers, and {{hero_name}} stands up, waving, and thanking the crowd. {{\n\n}} {{hero_name}} looks at you and your team. You notice they look at you suspiciously. But they soon look away, as do you.
+
+    PSugar400 continues once the crowd’s cheers die down. “But back to our team of playtesters. I think they deserve a name, what do you reckon?” The viewers in the stands agree loudly. “How about the Fighting Team?” suggests PSugar400. The audience cheers out the name.
+
+    “Fighting Team! Fighting Team! Fighting Team! Fighting Team! Fighting Team! Fighting Team!”
+
+    The Arm Attack Inc. Staff calm down the audience before PSugar400 keeps talking. ”Now, let’s hear a word from each member of our team. {{player_name}}, you’re up first.”
+
+[message “{{message}},” you say.]
+
+[dialogue advance]
+    “Thank you, {{player_name}}. Tear 2bad, what would you like to say to the audience?” replied PSugar400.
+
+    “It. Was. AWESOME! I was slashing enemies and taking them down. I carried the team, really,” he answered. You, MurdleMuffin, and Eevee005 all turn to look at Tear 2bad. “Okay, well, maybe not. But still, it was great.” he corrected sheepishly. 
+
+    “Wow, what a story! So, MurdleMuffin, what do you think?” asked PSugar400.
+
+    “It was fine, I kinda just stayed in one room for a while.” he answered simply.
+
+    “Oh. Well, that’s okay. And now, last but not least is Eevee005! What are your thoughts on the entire thing?” she asked.
+
+    “Much like the rest of us, I enjoyed it very much. Although, If you have the ability to, the Arm Attack Inc. team should make the boss more powerful. I took down the boss by myself. I think that the entire team, if not, at least more than one person should be required to take down Mr. Dye.” she said.
+
+    “Alright, I’ll pass that feedback on to the Development team,” replied PSugar400.
+
+    “And that was the Multiplayer Test for our dungeon here at Arm Attack Inc.! Thank you for being here. Once again, I’ve been your host, PSugar400, and goodnight.” finished PSugar400 before walking up to you and your team. {{\n\n}} “Tomorrow you all have meetings with {{hero_name}}. We’ve given you rooms in a nearby hotel. You all will have reps that you’ll work with. For now, follow the security team. They’ll lead you to your hotel rooms.” informed PSugar400.
+
+    You follow PSugar400’s lead along with the rest of your team. Eventually, PSugar400 breaks off the path, and you instead follow a security team. They bring you past crowds, so you wave to them. {{\n\n}} After a good 10 minutes, you arrive at your hotel room. Room 105. It’s not a very large room, but bigger than general hotel rooms. You look at the time, it’s only 3:00 PM, but you feel very tired. The bed looks very soft and comfortable. You decide to lay down, and then close your eyes, falling into a comfortable sleep.
+
+    The end.
+
+    Your game ID is {{epilogueID}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.

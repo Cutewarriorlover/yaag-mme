@@ -1,0 +1,9 @@
+[room boss_room]
+[dialogue]
+    You did not kill Eevee005.
+
+[stat Charisma 10]
+
+[state eevee spared]
+
+[run boss_room2.yaag]

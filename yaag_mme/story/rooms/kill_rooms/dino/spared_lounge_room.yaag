@@ -1,0 +1,9 @@
+[room lounge_room]
+[dialogue advance]
+    Dino-Pack is sharpening his blade, most likely preparing for the fight against Mr. Dye.
+
+    You probably shouldn't bother a man with a sharp sword in his hand.
+
+[decision "Where do you go?"]
+    North [run ../../monster_hall_room.yaag]
+    East [room ../../hidden_drop_room.yaag]

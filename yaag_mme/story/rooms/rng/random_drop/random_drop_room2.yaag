@@ -1,0 +1,9 @@
+[room random_drop_room]
+[dialogue advance]
+    The feeling of uneasiness is gone... At least for now.
+
+    You should keep going.
+
+[decision "Where do you want to go?"]
+    Left [run ../../monster_room.yaag]
+    Right [run ../../kill_rooms/dino/lounge_room.yaag]

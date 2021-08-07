@@ -1,0 +1,15 @@
+[room lounge_room]
+[dialogue advance]
+    As you walk into the room, Dino-Pack notices your arrival.
+
+    ---Chat---{{\n\n}}Dino-Pack: {{player_name}! hi!
+
+    {{player_name}}: hey
+
+    Dino-Pack: have you seen Tear or Murdle?
+
+    ---Trust Check---{{\n\n}}From now on, you may have to perform Trust Checks, which are determined by your Charisma stat. They are used to progress the story, and occationally earn bonus gear.
+
+[trust 10] 
+    [run trust_checks/pass.yaag]
+    [run trust_checks/fail.yaag]

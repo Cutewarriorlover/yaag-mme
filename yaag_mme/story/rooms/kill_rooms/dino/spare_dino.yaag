@@ -1,0 +1,19 @@
+[room lounge_room]
+[dialogue advance]
+    You did not kill Dino-Pack.
+
+[state dino spared]
+[stat Charisma 10]
+
+[dialogue advance]
+    You've visted everyone but one person.
+
+    Eevee005.
+
+    After asking Dino-Pack, you learn that Eevee005 went to go fight Mr. Dye by herself.
+
+    You should go find her.
+
+[decision "Where do you go?"]
+    North [run ../../monster_hall_room.yaag]
+    East [run ../../hidden_drop_room.yaag]

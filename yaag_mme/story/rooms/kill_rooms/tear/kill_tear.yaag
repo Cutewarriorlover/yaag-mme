@@ -1,0 +1,52 @@
+[room slime_sword_room]
+[dialogue advance]
+    You walk up to Tear 2bad, {{equipped_weapon}} in hand. You land a blow on his head.{{\n\n}}---Chat---
+
+    Tear 2bad: {{player_name}} what are you doing
+
+    Tear 2bad: im not an enemy
+
+    {{player_name}}: i know :)
+
+    Tear 2bad: what
+
+    Tear 2bad: are u trying to kill me?
+
+    {{player_name}}: yes :))
+
+    Tear 2bad: you cant beat me{{\n\n}}---Chat has ended---
+
+[fight Tear 2bad]
+
+[dialogue advance]
+    ---Chat---
+
+    Tear 2bad: you win
+
+    Tear 2bad: wy are you doing this {{player_name}}
+
+    {{player_name}}: i have my reasons
+
+    Tear 2bad: and what are those?
+
+[message "{{player_name}}: {{message}}"]
+
+[dialogue advance]
+    Tear 2bad youre evil
+
+    {{player_name}}: last words?
+
+    Tear 2bad: i knew u sucked the moment i met u{{\n\n}}---Chat has ended---
+
+    You raise your sword above Tear 2bad's head, and swing down, killing him.
+
+    You stand there, unsure of what to do.{{\n\n}}You decide that staying in the room is a bad idea.
+
+[state tear dead]
+
+[stat Charisma 5]
+
+[decision "Where do you want to go?"]
+    Right [run ../../in-between_room.yaag]
+    Left [run ../../corner_room.yaag]
+    Back [run ../../start_room.yaag]

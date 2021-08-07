@@ -1,0 +1,8 @@
+[room t_room]
+[dialogue]
+    You walk into the T-shaped room. To your right, you see MurdleMuffin. To your left, a hallway.{{\n\n}}You shoukd probably move along and do something useful.
+
+[decision "Where do you go?"]
+    Right [run kill_rooms/murdle/tucked_away_room.yaag]
+    Left [run empty_hall_room.yaag]
+    Back [run start_room.yaag]

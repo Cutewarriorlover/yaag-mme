@@ -1,0 +1,9 @@
+[room tucked_away_room]
+[if murdle == dead]
+    [run dead_tucked_away_room.yaag]
+
+[if murdle == spared]
+    [run spared_tucked_away_room.yaag]
+
+[if murdle == alive]
+    [run alive_tucked_away_room.yaag]

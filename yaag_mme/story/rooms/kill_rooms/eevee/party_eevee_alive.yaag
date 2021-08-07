@@ -1,0 +1,92 @@
+[room boss_room]
+
+[if dino == "alive"]
+    [state dino spared]
+
+[if tear == "alive"]
+    [state tear spared]
+
+[if murdle == "alive"]
+    [state murdle spared]
+
+[if dino == "dead"]
+    [dialogue advance]
+        ---Chat--{{\n\n}}Eevee005: dino!
+        
+        Eevee005: he's... he's...
+        
+        Eevee005: he's dead!
+        
+        {{player_name}}: what??
+        
+        Eevee005: y-yeah! i found his body!
+        
+        Eevee005: right outside!
+
+[if dino == "spared"]
+    [dialogue advance]
+        ---Chat--{{\n\n}}Eevee005: dino!
+        
+        Eevee005: he's... he's...
+        
+        Eevee005: he's on his way! :)
+        
+        {{player_name}}: nice
+
+        Dino-Pack: hey, hey, hey!
+        
+        Eevee005: dino! :){{\n\n}}---Chat has ended--
+
+        You, Eevee005, and Dino-Pack wait for the others to arrive.
+
+[if tear == "spared"]
+    [dialogue]
+        Tear 2bad rushes into the room at top speed, blade drawn.
+
+[if murdle == "spared"]
+    [dialogue]
+        MurdleMuffin slowly shuffles into the room.
+
+[dialogue advance]
+    ---Chat---{{\n\n}}{{player_name}}: hey guys
+
+    {{player_name}}: we did it
+
+    Eevee005: mr. dye is dead!
+
+[if dino == "spared"]
+    [dialogue advance]
+        Dino-Pack: woo!
+
+[if tear == "spared"]
+    [dialogue advance]
+        Tear 2bad: awh man
+
+        Tear 2bad: i wanted to kill him
+
+[if murdle == "spared"]
+    [dialogue]
+        MurdleMuffin: yay
+
+[dialogue advance]
+    Eevee005: so... now what?
+
+    Eevee005: do we just leave?
+
+    {{player_name}}: i think so
+
+    {{player_name}}: but how?
+
+    Eevee005: we should split up, look for a way out
+
+    {{player_name}}: sounds like a plan{{\n\n}}---Chat has ended---
+
+    You and your party look around the room for a way out. Eventually, someone notices a button on the far wall. They press it.
+
+    A subtly hidden door opens, blinding white lights included. You lead your party through the doors.
+
+[if tear == "spared"]
+    [dialogue]
+        As you, Eevee005 and Tear 2bad are about to enter, you notice Tear 2bad stopping Eevee005. He delivers a light punch to her shoulder. "thats for killing dye without me," pops up in chat. You roll your eyes, and push Tear 2bad through the doorway.
+
+[run ../../../epilogue/epilogue.yaag]

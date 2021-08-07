@@ -1,0 +1,45 @@
+[room boss_room]
+[dialogue advance]
+    As you enter Mr. Dye's arena, Eevee005 rushes you, her sword in hand. Just react just in time to hold your own blade to counter hers. You fall back before pushing hard against her sword, causing her to fall. Eevee005 takes a good, long look at you.
+
+    She blinks.
+
+    ----Chat---{{\n\n}}Eevee005: {{player_name}}!?
+
+    Eevee005: i thought you were a mob!
+
+    {{player_name}}: what kind of mob has sword?
+
+    {{player_name}}: seriously, girl
+
+    {{player_name}}: im nowhere near a mob
+
+    Eevee005: sorry...
+
+    Eevee005: im only human, after all
+
+    {{player_name}}: right
+
+    {{player_name}}: where's mr dye?
+
+    Eevee005: dead
+
+    Eevee005: i killed him
+
+    {{player_name}}: by yourself?
+
+    Eevee005: yeah, it was wayyyy too easy
+
+    {{player_name}}: sounds like they need to change that
+
+    Eevee005: btw
+
+    Eevee005: have you seen dino?
+
+    Eevee005: or the others ig
+
+    {{player_name}}: well
+
+[trust 15]
+    [run trust_checks/pass.yaag]
+    [run trust_checks/fail.yaag]

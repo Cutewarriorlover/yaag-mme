@@ -1,0 +1,22 @@
+[room slime_sword_room]
+[dialogue advance]
+    You walk to the room on your left, finding Tear 2bad. He's opening a chest.{{\n\n}}---Chat---{{\n\n}}{{player_name}}: hi
+
+    Tear 2bad: hello
+
+    Tear 2bad: this loot is awesome i found a nice sword
+
+    {{player_name}}: thats nice
+
+    Tear 2bad: here have this other sword i found too
+
+    {{player_name}}: thanks{{\n\n}}---Chat has ended---
+
+[item Slime Sword]
+
+[dialogue]
+    ----Spare or Kill?---{{\n\n}}In this game, you have the choice to either be a murderer, or run the dungeon as normal. Most of the time, you only get one chance to kill your party members, so choose wisely.
+
+[decision "Do you want to kill Tear 2bad?]
+    Yes [run kill_tear.yaag]
+    No [run spare_tear.yaag]

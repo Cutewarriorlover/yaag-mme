@@ -1,0 +1,17 @@
+[room boss_room]
+[dialogue advance]
+    Eevee005's corpse lies at your feet. Her once sparkly blue eyes now dull and lifeless. You feel no remorse for ending her life.
+
+    Then, it hits you.
+
+    You're the only one left.
+
+    Everyone has now died to your hands. Feeling nothing but satisfaction, you scan the room. "There has to be a way out of here somewhere," you think. Then, you notice something paculiar about the far wall. While it's all made of the same material, there appears to be a piece seperated from the rest, in the shape of a door. It's very subtle, but you decide to walk closer.
+
+    Next to where you saw the door was a small button. You push it.
+
+    The door indeed opens, blinding you with a white light.
+
+    Regardless, you push forward, leaving the dungeon.
+
+[run ../../../epilogue/epilogue.yaag]

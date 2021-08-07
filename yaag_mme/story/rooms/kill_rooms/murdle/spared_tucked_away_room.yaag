@@ -1,0 +1,9 @@
+[room tucked_away_room]
+[dialogue advance]
+    You walk into the room where you've seen MurdleMuffin.
+
+    You notice MurdleMuffin is still sitting in the corner.{{\n\n}}You should leave him alone.
+
+    You walk back the way you came.
+
+[run ../../t_room.yaag]

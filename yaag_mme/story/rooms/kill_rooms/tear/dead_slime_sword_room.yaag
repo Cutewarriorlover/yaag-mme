@@ -1,0 +1,10 @@
+[room slime_sword_room]
+[dialogue advance]
+    You walk into the left-hand room.{{\n\n}}You notice Tear 2bad's body is slumped over in the chest.
+
+    You shudder.
+
+[decision "Where do you want to go?"]
+    Left [run ../../corner_room.yaag]
+    Right [run ../../in-between_room.yaag]
+    Back [run ../../start_room.yaag]

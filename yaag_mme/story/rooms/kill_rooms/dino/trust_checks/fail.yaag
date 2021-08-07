@@ -1,0 +1,15 @@
+[room lounge_room]
+[dialogue advance]
+    {{player_name}}: .
+
+    {{player_name}}: ..
+
+    {{player_name}}: ...
+
+    Dino-Pack: you good?
+
+    {{player_name}}: ...
+
+    Dino-Pack: ... ._.{{\n\n}}---Chat has ended---
+
+[run post_check.yaag]

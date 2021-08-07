@@ -1,0 +1,54 @@
+[room lounge_room]
+[dialogue advance]
+    You walk up to Dino-Pack, with intent to kill.{{\n\n}}---Chat---
+
+    Dino-Pack: ????
+
+    {{player_name}}: :)
+
+    Dino-Pack: are you trying to fight me?
+
+    Dino-Pack: we'll see how that goes
+
+    Dino-Pack: come at me!
+
+    {{player_name}}: gladly >:){{\n\n}}---Chat has ended---
+
+[fight Dino-Pack]
+
+    ---Chat---{{\n\n}}Dino-Pack: why
+
+    Dino-Pack: just
+
+    Dino-Pack: why?
+
+    {{player_name}}: hmmm
+
+[message "{{player_name}}: {{message}}]
+
+[dialogue advance]
+    Dino-Pack: D:
+
+    {{player_name}}: last words?
+
+    Dino-Pack: i shouldn't've been so tursing
+
+    Dino-Pack: *trusting{{\n\n}}---Chat has ended---
+
+    You stab Dino-Pack in the chest. As he lays on the floor, dead, you look at his body. You feel no remorse, for some reason.
+
+[state dino dead]
+[stat Charisma 5]
+
+[dialogue advance]
+    You've visited everyone but one person.
+
+    Eevee005.
+
+    Seeing as you haven't seen her yet, you assume Eevee005 went on ahead of Dino-Pack.
+
+    You should go find her.
+
+[decision "Where do you go?"]
+    North [run ../../monster_hall_room.yaag]
+    East [run ../../hidden_drop_room.yaag]

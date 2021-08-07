@@ -1,0 +1,45 @@
+[dialogue advance]
+    Communication has become video game chat style, instead of actual speaking, as it was before.{{\n\n}}---Chat---
+
+    Dino-Pack: okay, we're here
+
+    Eevee005: yeah
+
+    Tear 2bad: lets speedrun mr dye
+
+    MurdleMuffin: what? why would we do that?
+
+    Dino-Pack: murdle's right
+
+    Dino-Pack: we need a better plan than rushing
+
+[message {{player_name}}: {{message}}]
+
+[dialogue advance]
+    Tear 2bad: {{player_name}} that plan sucks
+
+    Eevee005: lets just explore all the rooms
+
+    Eevee005: we can get good loot and finish off mr dye
+
+    Dino-Pack: good idea
+
+    MurdleMuffin: sounds like a plan
+
+    Tear 2bad: you guys are lame
+
+[message {{player_name}}: {{message}}]
+
+[dialogue advance]
+    Dino-Pack: ok go time{{\n\n}}---End of Chat---
+
+[item Stone Sword]
+
+[item Chain Armor]
+
+[dialogue advance]
+    You watch as everyone runs out of the room.
+
+[decision "Where do you go?"]
+    Left [run ../rooms/kill_rooms/tear/slime_sword_room.yaag]
+    Right [run ../rooms/t_room.yaag]

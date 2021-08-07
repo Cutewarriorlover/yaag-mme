@@ -1,0 +1,10 @@
+[room slime_sword_room]
+[dialogue advance]
+    You walk into the left-hand room.{{\n\n}}You see Tear 2bad, look around. He seems pensive.
+
+    You decide not to question it.
+
+[decision "Where do you want to go?"]
+    Left [run ../../corner_room.yaag]
+    Right [run ../../in-between_room.yaag]
+    Back [run ../../start_room.yaag]

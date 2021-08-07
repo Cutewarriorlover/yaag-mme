@@ -1,0 +1,5 @@
+[room random_drop_room]
+[dialogue advance]
+    You decide not to look around. {{\n\n}}"I can always come back later..." you think.
+
+[run random_drop_room2.yaag]

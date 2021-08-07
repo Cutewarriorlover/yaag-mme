@@ -1,0 +1,9 @@
+[room lounge_room]
+[if dino == dead]
+    [run dead_lounge_room.yaag]
+
+[if dino == spared]
+    [run spared_lounge_room.yaag]
+
+[if dino == alive]
+    [run alive_lounge_room.yaag]

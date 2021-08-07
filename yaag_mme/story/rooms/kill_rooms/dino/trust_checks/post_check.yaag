@@ -1,0 +1,6 @@
+[dialogue]
+    ----Spare or Kill?---{{\n\n}}In this game, you have the choice to either be a murderer, or run the dungeon as normal. Most of the time, you only get one chance to kill your party members, so choose wisely.
+
+[decision "Do you want to kill Dino-Pack?]
+    Yes [run ../kill_dino.yaag]
+    No [run ../spare_dino.yaag]

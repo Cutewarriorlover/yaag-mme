@@ -1,0 +1,32 @@
+%import common.ESCAPED_STRING -> STRING
+%import common.WORD
+%import common.INT
+
+_NEWLINE: /\n*/
+_EXPECTED_NEWLINE: /\n+/
+_INDENT: /(    )+/
+PARAMETER: _INDENT /.+/ _EXPECTED_NEWLINE?
+
+IDENTIFIER: "dialogue"
+    | "decision"
+    | "quiz"
+    | "run"
+    | "room"
+    | "fight"
+    | "if"
+    | "chest"
+    | "rng"
+    | "state"
+    | "trust"
+    | "stat"
+    | "var"
+    | "drop"
+    | "message"
+    | "item"
+
+start: command+
+
+command: "[" IDENTIFIER [" " special_parameter]* "]" [_EXPECTED_NEWLINE? parameter_list]
+
+special_parameter: STRING | /[^\[\]]+/ | INT
+parameter_list: (PARAMETER | _EXPECTED_NEWLINE)+

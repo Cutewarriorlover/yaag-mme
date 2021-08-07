@@ -1,0 +1,13 @@
+[room boss_room]
+[dialogue advance]
+    Eevee005's body lays at your feet, dead. Her eyes now lifeless. You don't know weather to be shocked, or relieved. You settle on being somewhat glad that you're not in her place.
+
+    Then it hits you.
+
+    Eevee005 is dead, and your party members are bound to arrive at any minute.
+
+    You hear it.
+
+    Footsteps.
+
+[run party_eevee_dead.yaag]
