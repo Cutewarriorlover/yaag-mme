@@ -34,14 +34,14 @@
 [if dino == "spared"]
     [dialogue advance]
         ---Chat---{{\n\n}}Dino-Pack: uh...
-        
+
         Dino-Pack: why is eevee dead?
 
         Dino-Pack: {{player_name}}... did you kill her!?
 
 [dialogue advance]
     {{player_name}}: no guys i swear i didnt kill her
-    
+
     {{player_name}}: mr dye did
 
 [if tear == "dead"]
@@ -62,11 +62,11 @@
 
 [dialogue advance]
     {{player_name}}: yes mr dye is dead
-    
+
     {{player_name}}: eevee weakened him a lot
-    
+
     {{player_name}}: so i ended his life
-    
+
     {{player_name}}: but it was too late
 
 [if murdle == "dead"]
@@ -85,13 +85,13 @@
 
 [dialogue advance]
     {{player_name}}: look
-    
+
     {{player_name}}: im sorry i couldnt save her
-    
+
     {{player_name}}: but there's nothing we can do
-    
+
     {{player_name}}: so lets just leave
-    
+
     {{player_name}}: we wont forget her, right?
 
 [if dino == "spared"]

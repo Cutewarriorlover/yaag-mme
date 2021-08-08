@@ -1,7 +1,6 @@
 [room boss_hall_room]
 [rng 50]
     [var secret_room found]
-    [var secret_room lost]    
+    [var secret_room lost]
 
 [run boss_hall_re-roll.yaag]
-    

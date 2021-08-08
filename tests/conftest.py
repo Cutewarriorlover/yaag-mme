@@ -1,7 +1,7 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath("../doc_switch"))
+sys.path.insert(0, os.path.abspath("../yaag_mme"))
 
 
 def pytest_sessionfinish(session, exitstatus):

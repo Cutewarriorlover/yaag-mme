@@ -2,7 +2,6 @@
 %import common.WORD
 %import common.INT
 
-_NEWLINE: /\n*/
 _EXPECTED_NEWLINE: /\n+/
 _INDENT: /(    )+/
 PARAMETER: _INDENT /.+/ _EXPECTED_NEWLINE?

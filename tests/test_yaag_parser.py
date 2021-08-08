@@ -1,32 +1,14 @@
+import os.path
+
+import pytest
+import pathlib
+
 from yaag_mme.yaag_parser import parser
+
+path = pathlib.Path(os.path.abspath("./yaag_mme/story"))
 
 
 class TestYaagParser:
-    def setup_method(self):
-        self.yaag_file = r"""
-[dialogue advance]
-    It was a normal day. You wake up, ready to start the day. You roll over in your bed, and check your phone. It's Saturday. You scroll the news app that came pre-installed on your phone. There's the usual. New tech releases, video games are announced, the leader of some country does something stupid, that kind of news.
-
-    Suddenly, something catches your eye. It's an ad by Arm Attack Inc. The ad reads:{{\n\n}}"Do you like video games? Do you like video games in real life? Need a bit of cash? Then you must try Yet Another Adventure Game!" Alongside the text is pixel art of a white and grey knife on a mossy stone brick background, and a few pictures of a warrior named {{hero_name}}, who was exploring a dungeon.
-
-    You open the ad, and it takes you to Arm Attack Inc.'s website. On the site, was tons of information about Yet Another Adventure Game. In the middle of the site, was another ad, still from Arm Attack Inc.
-
-    "Are you interested in helping out Arm Attack Inc.? If so, apply to become a play tester for Yet Another Adventure Game - Multiplayer Test! Call here:" read the ad, listing a phone number to call.
-
-    You call the number.{{\n\n}}"Hello! Thank you for calling Arm Attack Inc. What can I help you with? says the operator on the phone when they pick up.{{\n\n}}"Hi, yes, I was calling about the Multiplayer Test," you reply.{{\n\n}}"That's great! Please, tell me your name, and I'll set up an interview for you."{{\n\n}}"{{player_name}}."
-
-    After a few more qurestions from the phone operator, you write down the meeting time in your calendar. It's in two days.
-
-    Two days later...
-
-    "Well, that went well!" you think to yourself as you walk home from the interview. You were able to answer every question properly, and the interviewers appeared to be impressed. They had said to give them 24 hours to review your application, and they would get back to you.{{\n\n}}That night, your phone rings.
-
-     "Hello?" you answer.{{\n\n}}"Hello {{player_name}}, this is William Morris, CEO of Arm Attack Inc.," says a man on the phone. "I'm calling about your application for the Yet Another Adventure Game Multiplayer Test. You've been accepted," continued the CEO.
-
-     "Wait, seriously!?" you exclaim. "That's awesome! When's the test?" you ask.{{\n\n}}"In one week. So, on the 12th," answered the CEO.
-
-[run start.yaag]
-        """.strip()
-
-    def test_parser(self):
-        print(parser.parse(self.yaag_file))
+    @pytest.mark.parametrize("file", path.glob("**/*.yaag"), ids=[i.name for i in path.glob("**/*.yaag")])
+    def test_parser(self, file):
+        print(parser.parse(file.read_text()))
