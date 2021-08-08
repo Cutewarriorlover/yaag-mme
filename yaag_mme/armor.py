@@ -6,9 +6,11 @@ inside one file, but could be split into more. The class :class:`Armor` is the
 main entry point of all armor, being the one to define generic stats.
 
 While all armor classes can have more than one instance in memory at once (to
-keep from using the `Singleton Pattern <https://python-patterns.guide/gang-of-four/singleton/>`_),
-it is impossible to add more than one armor piece to any player, as it will
-have the appropriate validation, raising an :exc:`errors.PlayerAlreadyHasItemError`.
+keep from using the `Singleton Pattern
+<https://python-patterns.guide/gang-of-four/singleton/>`_),
+it is impossible to add more than one armor piece to any player, as it
+will have the appropriate validation, raising an
+:exc:`errors.PlayerAlreadyHasItemError`.
 """
 
 
@@ -26,8 +28,8 @@ class Armor:
             The amount of defense this piece of armor provides to the player.
 
             This attribute shouldn't have any use outside of the player class,
-            as it only applies to the player's stats (refer to :attribute:`player.Player.state`
-            for more information.)
+            as it only applies to the player's stats (refer to
+            :attribute:`player.Player.state` for further information.)
         name(str):
             The name of this piece of armor.
 
@@ -49,10 +51,10 @@ class Armor:
                 Does not adhere to title case. Should be named ``Iron Armor``
                 (extra space) with the *class* named ``IronArmor``.
             :Blue fish Armor:
-                Does not adhere to title case. Should be named ``Bluefish Armor``
-                (remove a space) or ``Blue Fish Armor`` (capitalization) with
-                the class named either ``BluefishArmor`` or ``BlueFishArmor``
-                respectively.
+                Does not adhere to title case. Should be named ``Bluefish
+                Armor`` (remove a space) or ``Blue Fish Armor``
+                (capitalization) with the class named either ``BluefishArmor``
+                 or ``BlueFishArmor`` respectively.
     """
     def __init__(self):
         self.defense = 0

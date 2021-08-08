@@ -14,7 +14,7 @@
 
     "So, what's your name?" asks Dino-Pack.
 
-    "Oh! My name is {{player_name}}" you answer. 
+    "Oh! My name is {{player_name}}" you answer.
 
     "Nice to meet you, {{player_name}}! Come on, let's go meet the others," replies Dino-Pack, walking towards a woman who is leaning against a wall.{{\n\n}}You walk up to her, while she's reading something on a peice of paper.
 

@@ -1,5 +1,5 @@
 [dialogue advance]
-    As you regain your vision, you see a crowd of people cheering for you and the rest of your team. 
+    As you regain your vision, you see a crowd of people cheering for you and the rest of your team.
 
     Then, the crowd starts gasping and murmuring. {{\n\n}} “They noticed that Tear 2bad, MurdleMuffin, and Eevee005 aren’t here,” said Dino-Pack.
 
@@ -36,4 +36,4 @@
 
     The end.
 
-    Your game ID is {{epilogueID}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.
+    Your game ID is {{epilogue_id}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.

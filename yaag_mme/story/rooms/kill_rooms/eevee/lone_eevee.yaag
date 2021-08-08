@@ -1,26 +1,26 @@
 [room boss_room]
 [dialogue advance]
     ---Chat--{{\n\n}}Eevee005: dino!
-        
+
     Eevee005: he's... he's...
-        
+
     Eevee005: he's dead!
-        
+
     {{player_name}}: what??
-        
+
     Eevee005: y-yeah! i found his body!
-        
+
     Eevee005: right outside!
-        
+
     {{player_name}}: what about the others?
-        
+
     Eevee005: idk
-        
+
     {{player_name}}: we should wait for them
-        
+
     Eevee005: agreed{{\n\n}}---Chat has ended---
 
-    So you and Eevee005 both wait. 
+    So you and Eevee005 both wait.
 
     And wait, and wait.
 

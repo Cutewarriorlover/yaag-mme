@@ -3,8 +3,8 @@
 %import common.INT
 
 _EXPECTED_NEWLINE: /\n+/
-_INDENT: /(    )+/
-PARAMETER: _INDENT /.+/ _EXPECTED_NEWLINE?
+_INDENT: /(    )+\s*/
+parameter: _INDENT /.+/ _EXPECTED_NEWLINE?
 
 IDENTIFIER: "dialogue"
     | "decision"
@@ -28,4 +28,4 @@ start: command+
 command: "[" IDENTIFIER [" " special_parameter]* "]" [_EXPECTED_NEWLINE? parameter_list]
 
 special_parameter: STRING | /[^\[\]]+/ | INT
-parameter_list: (PARAMETER | _EXPECTED_NEWLINE)+
+parameter_list: (parameter | _EXPECTED_NEWLINE)+

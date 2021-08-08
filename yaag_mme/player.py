@@ -1,8 +1,8 @@
-from src.armor import Armor
-from src.enums import GameScreen
-from src.errors import PlayerAlreadyHasItemError
-from src.utils import is_blank, lower_equals, lower_in
-from src.weapons import Weapon
+from yaag_mme.armor import Armor
+from yaag_mme.enums import GameScreen
+from yaag_mme.errors import PlayerAlreadyHasItemError
+from yaag_mme.utils import is_blank, lower_equals, lower_in
+from yaag_mme.weapons import Weapon
 
 
 def get_player(game, codes):
@@ -15,8 +15,11 @@ def get_player(game, codes):
     This function directly modifies ``game``'s ``heroName``.
 
     Args:
-      game(Game): The main ``Game`` object
-      codes(List[dict]): A list of character codes that can be used to represent a special player username.
+      game(Game):
+        The main ``Game`` object
+      codes(List[dict]):
+        A list of character codes that can be used to represent a special
+        player username.
 
     Returns:
         Player: A new ``Player`` instance based on the user's input.
@@ -29,7 +32,8 @@ def get_player(game, codes):
                 hero_name_to_be = input("What was your name in that game? ")
                 if is_blank(hero_name_to_be):
                     print(
-                        "Your name could not be blank. Please enter a different name.\n"
+                        "Your name could not be blank. Please enter a "
+                        "different name.\n"
                     )
                 else:
                     print("Thank you.")

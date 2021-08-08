@@ -1,4 +1,4 @@
-from src.game import Game
+from yaag_mme.game import Game
 
 game = Game()
 

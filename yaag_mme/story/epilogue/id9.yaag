@@ -1,5 +1,5 @@
 [dialogue advance]
-    As you regain your vision, you see a crowd of people cheering for you and the rest of your team. 
+    As you regain your vision, you see a crowd of people cheering for you and the rest of your team.
 
     Then, the crowd starts gasping and murmuring. {{\n\n}} “They noticed that MurdleMuffin and Eevee005 aren’t here,” said Dino-Pack.
 
@@ -24,7 +24,7 @@
 [dialogue advance]
     “Thank you, {{player_name}}. Tear 2bad, what would you like to say to the audience?” replied PSugar400.
 
-    “It. Was. AWESOME! I was slashing enemies and taking them down. I carried the team, really,” he answered. You and Dino-Pack both turn to look at Tear 2bad. “Okay, well, maybe not. But still, it was great.” he corrected sheepishly. 
+    “It. Was. AWESOME! I was slashing enemies and taking them down. I carried the team, really,” he answered. You and Dino-Pack both turn to look at Tear 2bad. “Okay, well, maybe not. But still, it was great.” he corrected sheepishly.
 
     “Wow, what a story! Dino-Pack, what do you have to say?” said PSugar400, continuing her interviews.
 
@@ -38,4 +38,4 @@
 
     The end.
 
-    Your game ID is {{epilogueID}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.
+    Your game ID is {{epilogue_id}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.

@@ -1,16 +1,22 @@
 class Printer:
     """
-    A basic printer
+        A basic printer
 
-    .. Attention:: There should only be one instance of this class at all times.
+        .. Attention:: There should only be one instance of this class at all
+            times.
 
-    Attributes:
-        debug (bool):
-            Whether this logger / printer is a debugging logger (and, thus, whether this logger should print out it's
-            message without a ``-d`` / ``--debug`` flag.)
-        name (str):
-            The name of this logger. This is only required if ``debug`` is ``True``.
-    """
+        Attributes:
+            debug (bool):
+                Whether this logger / printer is a debugging logger (and,
+                thus, whether this logger should print out it's message
+                 without a ``-d`` / ``--debug`` flag.)
+            name (str):
+                The name of this logger. This is only required if ``debug`` is
+                ``True``.
+        """
+
+    _printer = None
+    _debug = None
 
     def __init__(self, *, debug=False, name="debug"):
         self.debug = debug
@@ -43,7 +49,21 @@ class Printer:
                 Whether to add an ``input()`` after the ``print()``, thus
                 advancing the game, defaults to False.
         """
-        print(message)
+        if self.debug:
+            print(f"DEBUG ({self.name}): {message}")
+        else:
+            print(message)
 
         if advance:
             input()
+
+    @staticmethod
+    def get_printer(*, debug=False):
+        if debug:
+            if not Printer._debug:
+                Printer._debug = Printer(debug=True)
+            return Printer._debug
+
+        if not Printer._printer:
+            Printer._printer = Printer()
+        return Printer._printer

@@ -1,5 +1,5 @@
 [dialogue advance]
-    As you regain your vision, you see a crowd of people cheering for you and the rest of your team. 
+    As you regain your vision, you see a crowd of people cheering for you and the rest of your team.
 
     Then, the crowd starts gasping and murmuring. {{\n\n}} “They noticed that Tear 2bad and MurdleMuffin aren’t here,” said Eevee005.
 
@@ -26,7 +26,7 @@
 
     “I ended up finding some really good gear. Gave some extras to other team members, actually. Fighting enemies was really fun! I’d love to do the other floors.” he told PSugar400.
 
-    “Well, in the future, you might actually be able to do the other two!” she told Dino-Pack. The audience hollers with excitement, but PSugar400’s interview isn’t over. 
+    “Well, in the future, you might actually be able to do the other two!” she told Dino-Pack. The audience hollers with excitement, but PSugar400’s interview isn’t over.
 
     “And now, last but not least is Eevee005! What are your thoughts on the entire thing?” she asked.
 
@@ -40,4 +40,4 @@
 
     The end.
 
-    Your game ID is {{epilogueID}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.
+    Your game ID is {{epilogue_id}}. If you play the Floor 2 or Floor 3 games for YAAG Murder Mystery Edition, you’ll need it.
