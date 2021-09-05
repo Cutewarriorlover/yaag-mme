@@ -12,7 +12,7 @@ def get_player(game, codes):
     From the input of a user, this function gives the player's ``Player``
     instance with the name. This also sets the game's ``alphaName``, which
     is the name of the player in YAAG Alpha (defaults to ``WarriorGold001``).
-    This function directly modifies ``game``'s ``heroName``.
+    This function directly modifies ``game``'s ``hero_name``.
 
     Args:
       game(Game):
@@ -25,7 +25,7 @@ def get_player(game, codes):
         Player: A new ``Player`` instance based on the user's input.
     """
     def get_hero_name():
-        while not game.state["heroName"]:
+        while not game.state["hero_name"]:
             print("Have you played Yet Another Adventure Game?")
             hero_decider = input("Yes or No? ")
             if lower_equals(hero_decider, "yes"):
@@ -38,11 +38,11 @@ def get_player(game, codes):
                 else:
                     print("Thank you.")
                     input()
-                    game.state["heroName"] = hero_name_to_be
+                    game.state["hero_name"] = hero_name_to_be
             elif lower_equals(hero_decider, "no"):
                 print("Thank you.")
                 input()
-                game.state["heroName"] = "WarriorGold001"
+                game.state["hero_name"] = "WarriorGold001"
             else:
                 print("Please select a valid option.")
 
@@ -60,7 +60,7 @@ def get_player(game, codes):
 
     def get_name():
         taken_names = ("eevee005", "murdlemuffin", "tear 2bad",
-                       game.state["heroName"])
+                       game.state["hero_name"])
 
         player_name = input("What is your name? ")
         if player_name.lower() == "dino-pack":
