@@ -18,17 +18,3 @@ class Command:
         else ""}{"".join(self.special_parameters)}]
 {chr(10).join([repr(i) for i in self.parameters])}
         """.strip()
-
-    def execute(self, game):
-        printer = Printer.get_printer()
-        player_name = game.player.name
-        hero_name = game.state["hero_name"]
-        epilogue_id = game.state["epilogue_id"]
-
-        if self.type == "dialogue":
-            for parameter in self.parameters:
-                message = str(parameter) \
-                    .replace("{{player_name}}", player_name) \
-                    .replace("{{epilogue_id}}", str(epilogue_id)) \
-                    .replace("{{hero_name}}", hero_name)
-                printer.print(message, advance=(len(self.parameters) > 0))
