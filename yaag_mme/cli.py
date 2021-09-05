@@ -1,14 +1,16 @@
 """Console script for yaag_mme."""
+import os
 import sys
 import click
+
+from yaag_mme.game import Game
 
 
 @click.command()
 def main(args=None):
-    """Console script for yaag_mme."""
-    click.echo("Replace this message by putting your code into "
-               "yaag_mme.cli.main")
-    click.echo("See click documentation at https://click.palletsprojects.com/")
+    os.chdir(os.path.dirname(os.path.realpath(__file__)))
+    game = Game()
+    game.play()
     return 0
 
 
