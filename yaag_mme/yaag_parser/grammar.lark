@@ -6,22 +6,7 @@ _EXPECTED_NEWLINE: /\n+/
 _INDENT: /(    )+\s*/
 parameter: _INDENT /.+/ _EXPECTED_NEWLINE?
 
-IDENTIFIER: "dialogue"
-    | "decision"
-    | "quiz"
-    | "run"
-    | "room"
-    | "fight"
-    | "if"
-    | "chest"
-    | "rng"
-    | "state"
-    | "trust"
-    | "stat"
-    | "var"
-    | "drop"
-    | "message"
-    | "item"
+IDENTIFIER: WORD
 
 start: command+
 
