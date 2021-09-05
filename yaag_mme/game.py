@@ -52,7 +52,7 @@ class Game:
     def game(self):
         """The game's main gameplay."""
         if self.state["room"] == GameRoom.START:
-            execute("story/intro/start.yaag")
+            execute("story/intro/start.yaag", self)
         self.state["playing"] = False
 
     def epilogue(self):
