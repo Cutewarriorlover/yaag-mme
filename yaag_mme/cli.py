@@ -7,10 +7,11 @@ from yaag_mme.game import Game
 
 
 @click.command()
-def main(args=None):
+@click.option("--debug", "-d", is_flag=True, help="Run game in Debug mode")
+def main(debug):
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
     game = Game()
-    game.play()
+    game.play(debug)
     return 0
 
 

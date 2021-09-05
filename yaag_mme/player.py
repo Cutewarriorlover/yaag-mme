@@ -5,14 +5,64 @@ from yaag_mme.utils import is_blank, lower_equals, lower_in
 from yaag_mme.weapons import Weapon
 
 
+def _get_hero_name(game):
+    while not game.state["hero_name"]:
+        print("Have you played Yet Another Adventure Game?")
+        hero_decider = input("Yes or No? ")
+        if lower_equals(hero_decider, "yes"):
+            hero_name = input("What was your name in that game? ")
+            if is_blank(hero_name):
+                print(
+                    "Your name could not be blank. Please enter a "
+                    "different name.\n"
+                )
+            else:
+                print("Thank you.")
+                input()
+                return {"hero_name": hero_name}
+        elif lower_equals(hero_decider, "no"):
+            print("Thank you.")
+            input()
+            return {"hero_name": "WarriorGold001"}
+        else:
+            print("Please select a valid option.")
+
+
+def _test_character_code(codes):
+    input_code = input("What is your code? ")
+    for code, username in codes.items():
+        if input_code == code:
+            print(f"Welcome, {username}")
+            return {"name": username}
+    print("That's not a valid code.")
+    print("")
+    return {}
+
+
+def _get_name(game):
+    taken_names = ("eevee005", "murdlemuffin", "tear 2bad",
+                   game.state["hero_name"])
+
+    player_name = input("What is your name? ")
+    if player_name.lower() == "dino-pack":
+        print("Hey! That's me. You can't take that name.\n")
+        print("Try again.\n")
+    elif lower_in(player_name, taken_names):
+        print("That name is taken, please try again.\n")
+    elif is_blank(player_name):
+        print("Your name cannot be blank. Please try again.\n")
+    else:
+        return {"name": player_name}
+
+
 def get_player(game, codes):
     """
-    Returns a player from a list of inputs by the actual player.
+    Returns a group of info from a list of inputs by the actual player.
 
     From the input of a user, this function gives the player's ``Player``
-    instance with the name. This also sets the game's ``alphaName``, which
+    instance with the name. This also sets the game's ``hero_name``, which
     is the name of the player in YAAG Alpha (defaults to ``WarriorGold001``).
-    This function directly modifies ``game``'s ``hero_name``.
+    This function does not directly modify ``game``'s ``hero_name``.
 
     Args:
       game(Game):
@@ -22,71 +72,22 @@ def get_player(game, codes):
         player username.
 
     Returns:
-        Player: A new ``Player`` instance based on the user's input.
+        {"name": str, "hero_name": str}: A group of info from the user's input
     """
-    def get_hero_name():
-        while not game.state["hero_name"]:
-            print("Have you played Yet Another Adventure Game?")
-            hero_decider = input("Yes or No? ")
-            if lower_equals(hero_decider, "yes"):
-                hero_name_to_be = input("What was your name in that game? ")
-                if is_blank(hero_name_to_be):
-                    print(
-                        "Your name could not be blank. Please enter a "
-                        "different name.\n"
-                    )
-                else:
-                    print("Thank you.")
-                    input()
-                    game.state["hero_name"] = hero_name_to_be
-            elif lower_equals(hero_decider, "no"):
-                print("Thank you.")
-                input()
-                game.state["hero_name"] = "WarriorGold001"
-            else:
-                print("Please select a valid option.")
-
-    def test_character_code():
-        input_code = input("What is your code? ")
-        for code, username in codes.items():
-            if input_code == code:
-                print(f"Welcome, {username}")
-                info.update({"name": username})
-                game.state["screen"] = GameScreen.GAME
-                break
-        if not info.get("name"):
-            print("That's not a valid code.")
-            print("")
-
-    def get_name():
-        taken_names = ("eevee005", "murdlemuffin", "tear 2bad",
-                       game.state["hero_name"])
-
-        player_name = input("What is your name? ")
-        if player_name.lower() == "dino-pack":
-            print("Hey! That's me. You can't take that name.\n")
-            print("Try again.\n")
-        elif lower_in(player_name, taken_names):
-            print("That name is taken, please try again.\n")
-        elif is_blank(player_name):
-            print("Your name cannot be blank. Please try again.\n")
-        else:
-            info.update({"name": player_name})
-            game.state["screen"] = GameScreen.GAME
 
     info = {}
 
-    get_hero_name()
+    info.update(_get_hero_name(game))
 
     while not info.get("name"):
         print("Do you have a character code?")
         character_code = input("Yes or No? ")
         if character_code.lower() == "yes":
-            test_character_code()
+            info.update(_test_character_code(codes))
         elif character_code.lower() == "no":
-            get_name()
+            info.update(_get_name(game))
 
-    return Player(info["name"])
+    return info
 
 
 class Player:
@@ -116,7 +117,7 @@ class Player:
         amount of health healed.
         """
         if self.stats["healing"] + self.stats["health"] > self.stats[
-                "maxHealth"]:
+            "maxHealth"]:
             self.stats["health"] = self.stats["maxHealth"]
         else:
             self.stats["health"] += self.stats["healing"]
@@ -149,23 +150,23 @@ class Player:
         print("Your inventory:")
 
         print("  Weapons:")
-        for item in self.inventory.items:
-            if isinstance(item, Weapon):
-                print(
-                    f"    {item.name} x{self.inventory.items.count(item)}" +
-                    (" (Equipped)" if item is self.equipped["sword"] else ""))
+        for item in filter(lambda x: isinstance(x, Weapon), self.inventory.items):
+            print(
+                f"    {item.name} x{self.inventory.items.count(item)}" +
+                (" (Equipped)" if item is self.equipped["sword"] else ""))
 
         print("\n  Armor:")
-        for item in self.inventory.items:
-            if isinstance(item, Armor):
-                print(
-                    f"    {item.name} x{self.inventory.items.count(item)}" +
-                    (" (Equipped)" if item is self.equipped["armor"] else ""))
+        for item in filter(lambda x: isinstance(x, Armor), self.inventory.items):
+            print(
+                f"    {item.name} x{self.inventory.items.count(item)}" +
+                (" (Equipped)" if item is self.equipped["armor"] else ""))
 
         print("\n  Other:")
-        for item in self.inventory.items:
-            if not isinstance(item, Weapon) and not isinstance(item, Armor):
-                print(f"    {item.name} x{self.inventory.items.count(item)}")
+        for item in filter(
+            lambda x: not isinstance(x, Weapon) and not isinstance(x, Armor),
+            self.inventory.items
+        ):
+            print(f"    {item.name} x{self.inventory.items.count(item)}")
 
 
 class Inventory:

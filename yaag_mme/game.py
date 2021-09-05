@@ -2,7 +2,7 @@ import json
 
 from yaag_mme.armor import ChainArmor
 from yaag_mme.enums import GameScreen, GameRoom
-from yaag_mme.player import get_player
+from yaag_mme.player import get_player, Player
 from yaag_mme.printer import Printer
 from yaag_mme.weapons import StoneSword
 from yaag_mme.yaag_parser import execute
@@ -19,16 +19,18 @@ class Game:
         }
         self.player = None
         self.printer = Printer()
+        self.debug = False
 
-    def play(self):
+    def play(self, debug):
         """Start the game!"""
+        self.debug = debug
         while self.state["playing"]:
             if self.state["screen"] == GameScreen.TITLE:
                 self.title_screen()
             elif self.state["screen"] == GameScreen.GAME:
-                self.game()
+                self.game_screen()
             elif self.state["screen"] == GameScreen.EPILOGUE:
-                self.epilogue()
+                self.epilogue_screen()
 
     def title_screen(self):
         """
@@ -42,18 +44,27 @@ class Game:
         print("")
         input("Press enter to begin.")
 
-        with open("config.json") as file:
-            self.player = get_player(self, json.load(file)["codes"])
+        if not self.debug:
+            with open("config.json") as file:
+                info = get_player(self, json.load(file)["codes"])
+                self.player = Player(info.name)
+                self.state["hero_name"] = info["hero_name"]
+        else:
+            self.player = Player("DebugPlayer")
+            self.state["hero_name"] = "DebugHero"
 
         # Starting items
         self.player.inventory.add(StoneSword())
         self.player.inventory.add(ChainArmor())
 
-    def game(self):
+        self.state["room"] = GameRoom.START
+        self.state["screen"] = GameScreen.GAME
+
+    def game_screen(self):
         """The game's main gameplay."""
         if self.state["room"] == GameRoom.START:
             execute("story/intro/start.yaag", self)
         self.state["playing"] = False
 
-    def epilogue(self):
+    def epilogue_screen(self):
         """The game's epilogue."""
