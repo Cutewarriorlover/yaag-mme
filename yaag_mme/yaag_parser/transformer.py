@@ -1,3 +1,4 @@
+import itertools
 import re
 
 from lark import Transformer
@@ -12,7 +13,7 @@ class YaagTransformer(Transformer):
 
     @staticmethod
     def special_parameter(special_parameter):
-        return special_parameter[0].value
+        return [parameter.value for parameter in special_parameter]
 
     @staticmethod
     def parameter_list(parameter_list):
