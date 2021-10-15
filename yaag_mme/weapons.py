@@ -12,11 +12,11 @@ class StoneSword(Weapon):
         self.name = "Stone Sword"
 
 
-class SlimyBlade(Weapon):
+class SlimeSword(Weapon):
     def __init__(self):
         super().__init__()
         self.power = 3
-        self.name = "Slimy Blade"
+        self.name = "Slime Sword"
 
 
 class LeadBlade(Weapon):
